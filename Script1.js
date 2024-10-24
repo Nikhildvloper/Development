@@ -1,10 +1,10 @@
-// Simple script to add interactivity
+// Simple script for interactivity, currently no advanced features
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav ul li a');
 
     links.forEach(link => {
         link.addEventListener('click', function() {
-            alert(`You clicked on ${this.textContent}`);
+            console.log(`Navigating to: ${this.textContent}`);
         });
     });
 });
