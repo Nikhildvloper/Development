@@ -42,22 +42,21 @@ body {
     margin-bottom: 30px;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+.contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
 }
 
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.btn-primary {
+.btn-info {
     background-color: #007bff;
     border-color: #007bff;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.2rem;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #0056b3;
+    border-color: #004085;
 }
 
 .footer {
@@ -75,9 +74,5 @@ body {
 
     .hero p {
         font-size: 1.2rem;
-    }
-
-    .contact-form {
-        width: 90%;
     }
 }
