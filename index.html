@@ -6,48 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: white !important;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500');
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-        }
-
-        .section-title {
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -68,6 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#ai-development">AI Development</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -75,33 +37,46 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>Explore the World of Development</h1>
+        <p>Unlock your potential in Web, App, and AI Development</p>
     </div>
 
     <!-- Web Development Section -->
     <div class="container" id="web-development">
         <h2 class="section-title text-center">Web Development</h2>
         <p class="text-center">Web development is the process of building and maintaining websites. It includes everything from
-            creating simple static pages to complex web applications. The two primary types of web development are front-end and back-end development.
-            Front-end focuses on user experience, using technologies like HTML, CSS, and JavaScript, while back-end involves server-side logic, databases, and APIs.
-        </p>
+            creating simple static pages to complex web applications...</p>
     </div>
 
     <!-- App Development Section -->
     <div class="container" id="app-development">
         <h2 class="section-title text-center">App Development</h2>
-        <p class="text-center">App development refers to the creation of software applications for mobile devices like smartphones and tablets. 
-            Developers can create native apps for platforms such as Android and iOS or build cross-platform apps using frameworks like React Native and Flutter. 
-            The process involves designing the UI/UX, writing code, testing, and deploying the app on app stores.
-        </p>
+        <p class="text-center">App development refers to the creation of software applications for mobile devices like smartphones and tablets...</p>
     </div>
 
     <!-- AI Development Section -->
     <div class="container" id="ai-development">
         <h2 class="section-title text-center">AI Development</h2>
-        <p class="text-center">AI development involves creating systems that can learn, reason, and make decisions. This includes building machine learning models,
-            developing natural language processing systems, and creating AI-powered applications. AI development has applications in many fields, from healthcare to
-            finance and autonomous vehicles.
-        </p>
+        <p class="text-center">AI development involves creating systems that can learn, reason, and make decisions. This includes...</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container" id="contact-us">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <!-- Footer -->
@@ -113,6 +88,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
