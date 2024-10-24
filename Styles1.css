@@ -1,24 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset and font settings */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    padding: 10px;
 }
 
 nav ul li {
@@ -29,18 +42,36 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Section styling */
+main {
+    padding: 20px;
 }
 
 section {
-    margin: 20px;
+    margin-bottom: 40px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
     color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -48,12 +79,49 @@ ul {
     margin-left: 20px;
 }
 
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
     width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
 }
